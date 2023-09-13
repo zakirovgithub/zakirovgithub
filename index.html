@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="login_form">
+            <form id="form" method="POST" action="{{ url_for('login_register') }}">
+                <img src="./login.png" alt="">
+                <label for="login"></label>
+                <input type="text" name="login" required placeholder="Username"><br><br>
+
+                <label for="password"> </label>
+                <input type="password" name="password" required placeholder="Password"><br><br>
+
+                <input type="submit" value="Login">
+            </form>
+
+        </div>
+    </header>
+    <script src="./node.js"></script>
+</html>
